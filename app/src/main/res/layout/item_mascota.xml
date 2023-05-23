@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_mascota"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/text_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp" />
+
+    <ImageView
+        android:id="@+id/icon_hueso"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/hueso_blanco"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/text_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_mascotas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item
+            android:id="@+id/action_favorites"
+            android:icon="@drawable/ic_favorite"
+            android:title="@string/favorites"
+            app:showAsAction="always" />
+
+    </menu>
+
+</LinearLayout>
